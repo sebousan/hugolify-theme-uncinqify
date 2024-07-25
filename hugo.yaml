@@ -1,0 +1,19 @@
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: layouts
+      target: layouts
+    - source: static
+      target: static
+
+# Params
+params:
+  hero:
+    image_2:
+      desktop: '526x'
+      mobile: '300x'
+  casestudies:
+    thumbnail:
+      desktop: "291x"
+      mobile: "235x"

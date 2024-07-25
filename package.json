@@ -1,0 +1,24 @@
+{
+  "name": "hugolify-theme-uncinqify",
+  "version": "0.0.0",
+  "homepage": "https://uncinq.dev",
+  "repository": "https://github.com/sebousan/hugolify-theme-uncinqify",
+  "bugs": {
+    "url": "https://github.com/sebousan/hugolify-theme-uncinqify/issues"
+  },
+  "author": {
+    "email": "sebousan@gmail.com",
+    "name": "Sébastien Moulène",
+    "url": "https://www.sebastienmoulene.com/"
+  },
+  "keywords": [
+    "hugolify",
+    "hugo",
+    "hugo-theme",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@hugolify/prettier-config": "^0.3.1"
+  }
+}
