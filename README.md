@@ -7,6 +7,7 @@ Edit `config/_default/module.yaml` to install the `hugolify-theme-uncinqify` mod
 ```yml
 imports:
   - path: github.com/sebousan/hugolify-theme-uncinqify
+  - path: github.com/hugolify/hugolify-theme # Required
 ```
 
 ## Documentation
