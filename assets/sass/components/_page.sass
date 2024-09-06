@@ -16,16 +16,17 @@
         --bs-aspect-ratio: 75%
     a
         @extend .stretched-link
-        &:hover 
-            &,
-            & + .media
-                background-color: #{$secondary_light}
-            & + .media
-                img
-                    transform: none
     .btn
         @extend .btn-link
         margin-left: calc(#{$btn-padding-x} * -1)
+
+    @media (hover: hover)
+        &:hover 
+            --bs-card-bg: #{$secondary_light}
+        .media
+            img
+                transform: none
+
 
     @media (prefers-reduced-motion: no-preference)
         .content,
