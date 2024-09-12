@@ -4,22 +4,6 @@ header[role="banner"]
             --bs-nav-link-color: #{$primary}
             text-decoration: none
        
-    .nav-primary
-        &:last-child
-            margin-right: 0
-        > li:last-child
-            @include media-breakpoint-down(lg)
-                margin-top: var(--bs-nav-link-padding-y)
-            @include media-breakpoint-up(lg)
-                margin-left: var(--bs-nav-link-padding-x)
-            a
-                background-color: $primary
-                border-radius: $border-radius
-                color: white
-                text-decoration: none
-                &:hover
-                    background-color: shade-color($primary, $btn-hover-bg-shade-amount)
-
     .dropdown-menu
         --bs-dropdown-link-hover-bg: transparent
         --bs-dropdown-link-active-bg: transparent
