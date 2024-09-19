@@ -9,11 +9,13 @@
     height: 100%
     overflow: hidden
     .block-bg &
-        --bs-card-bg: #{$gray-200}
+        --bs-card-bg: #{darken($light, 2)}
         .media
-            background-color: var(--bs-card-bg)
+            background: transparent
     .media
         --bs-aspect-ratio: 75%
+        img
+            object-fit: contain
     a
         @extend .stretched-link
     .btn
@@ -21,9 +23,10 @@
         margin-left: calc(#{$btn-padding-x} * -1)
 
     @media (hover: hover)
+        transition: background .3s ease
         &:hover 
             --bs-card-bg: #{$secondary_light}
-        .media
+        a:hover ~ .media
             img
                 transform: none
 
