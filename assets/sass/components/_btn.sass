@@ -3,3 +3,5 @@
     font-weight: 700
     letter-spacing: .05em
     text-transform: uppercase
+    &:not([href^="#"]):not([aria-controls="toc"])
+        @include link-arrow

@@ -4,6 +4,9 @@
     &-media
         @extend .col-xl-4
         @extend .offset-xl-1
+    [target="_blank"]
+        &::before
+            content: none
 
     @include media-breakpoint-up(md)
         .container
