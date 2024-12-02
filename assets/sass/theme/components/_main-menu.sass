@@ -36,10 +36,18 @@ header[role="banner"]
         .dropdown:has(.show)
             background: white
             border-radius: 1rem
-        .dropdown-toggle::before
-            content: ''
-            inset: 0
-            position: absolute
+        .dropdown-toggle
+            &::before
+                content: ''
+                inset: 0
+                position: absolute
+            &::after
+                @include icon("caret-down-fill")
+                border: 0
+                font-size: .875rem
+                margin-left: 0
+        .active + .dropdown-toggle::after
+            color: var(--bs-nav-link-color)
         .dropdown-menu
             --bs-dropdown-border-color: #{$gray-300}
             --bs-dropdown-border-radius: 1rem
