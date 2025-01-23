@@ -12,18 +12,15 @@
         --bs-dropdown-link-hover-bg: transparent
         --bs-dropdown-link-active-bg: transparent
         --bs-dropdown-link-active-color: inherit
-        --bs-dropdown-padding-x: 0
-        --bs-dropdown-padding-y: 0
-        --bs-dropdown-item-padding-x: 0
-        --bs-dropdown-item-padding-y: 0
         li
             border-radius: var(--bs-dropdown-border-radius)
-            padding: var(--bs-dropdown-item-padding-x)
+            padding: 1rem
             position: relative
         a
             @extend .stretched-link
             --bs-nav-link-font-size: 1rem
             font-weight: $font-weight-bold
+            padding: 0
             text-decoration: none
         p
             color: $gray-800
