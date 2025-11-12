@@ -29,6 +29,7 @@ jobs:
             "sebousan/lawyerify-www"
             "sebousan/medicalify-www"
             "sebousan/realestatify-www"
+            "sebousan/hugolify-www"
             "sebousan/uncinq.dev"
           )
 
