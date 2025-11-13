@@ -1,0 +1,85 @@
+name: Update dependent Hugo sites manually
+on:
+  workflow_dispatch:
+    inputs: {}
+
+jobs:
+  update-sites:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout module repo
+        uses: actions/checkout@v4
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+      - name: Get release tag
+        id: vars
+        run: echo "tag=${GITHUB_REF##*/}" >> $GITHUB_OUTPUT
+
+      # Install Hugo
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      # Install Go
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      # Cache Go modules
+      - name: Cache Go modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/go/pkg/mod
+            ~/.cache/go-build
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+
+      # Cache Hugo modules
+      - name: Cache Hugo modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/hugo_cache
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
+
+      # Update dependent sites
+      - name: Update dependent sites
+        run: |
+          # Liste des dépôts à mettre à jour
+          repos=(
+            "sebousan/architectify-www"
+            "sebousan/capitalify-www"
+            "sebousan/handify-www"
+            "sebousan/lawyerify-www"
+            "sebousan/medicalify-www"
+            "sebousan/realestatify-www"
+            "sebousan/hugolify-www"
+            "sebousan/uncinq.dev"
+          )
+
+          for repo in "${repos[@]}"; do
+            echo "Updating $repo..."
+            git clone https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/$repo.git
+            cd $(basename $repo)
+            
+            # Mettre à jour le module Hugo
+            hugo mod get github.com/sebousan/hugolify-theme-uncinqify@${{ steps.vars.outputs.tag }}
+            hugo mod tidy
+
+            git add go.mod go.sum
+            git commit -m "chore: update hugolify-theme-uncinqify to ${{ steps.vars.outputs.tag }}" || echo "No changes to commit"
+            git push origin main
+            cd ..
+          done
+    env:
+      GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
