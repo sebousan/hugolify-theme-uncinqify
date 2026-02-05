@@ -64,8 +64,9 @@
                     top: 1rem
                 to
                     top: 0
-            li:hover
-                background-color: $light
+            @media (hover: hover) and (pointer: fine)
+                li:hover
+                    background-color: $light
 
     @include media-breakpoint-down(lg)
         .nav

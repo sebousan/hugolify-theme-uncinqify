@@ -22,22 +22,20 @@
         @extend .btn-link
         margin-left: calc(#{$btn-padding-x} * -1)
 
-    @media (hover: hover)
-        transition: background .3s ease
+    @media (hover: hover) and (pointer: fine)
         &:hover 
             --bs-card-bg: #{$secondary_light}
-        a:hover ~ .media
-            img
-                transform: none
-
-
-    @media (prefers-reduced-motion: no-preference)
-        .content,
-        .media
-            transition: background .3s ease
-
         @if variable-exists(icons-map)
             a:hover
                 .btn::before
                     transform: translateX(5px)
+        a:hover ~ .media
+            img
+                transform: none
+
+    @media (prefers-reduced-motion: no-preference)
+        transition: background .3s ease
+        .content,
+        .media
+            transition: background .3s ease
 
