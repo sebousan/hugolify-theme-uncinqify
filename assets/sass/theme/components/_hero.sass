@@ -4,6 +4,18 @@
     &-media
         @extend .col-xl-4
         @extend .offset-xl-1
+    &-media + .hero-media
+        @extend .col-xxl-5
+        bottom: -5%
+        left: 0
+        position: absolute
+        @include media-breakpoint-up(md)
+            left: 50%
+        @include media-breakpoint-up(lg)
+            left: 55%
+        @include media-breakpoint-up(xxl)
+            bottom: -20%
+            margin-left: 0
     [target="_blank"]
         &::before
             content: none
