@@ -9,11 +9,18 @@ module:
 
 # Params
 params:
+  # Image
+  # _merge: deep, because both keys already exist upstream — hero in
+  # hugolify-theme, casestudies in hugolify-theme-casestudies — and what follows
+  # adds to those maps instead of standing in for them.
   hero:
+    _merge: deep
     image_2:
       desktop: '526x'
       mobile: '300x'
   casestudies:
+    _merge: deep
     thumbnail:
-      desktop: "291x"
-      mobile: "235x"
+      _merge: deep
+      desktop: '291x'
+      mobile: '235x'

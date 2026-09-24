@@ -1,0 +1,11 @@
+{
+  "heading": {
+    "surtitle": {
+      "marginBlockEnd": {
+        "$value": "{size.16}",
+        "$type": "dimension",
+        "$description": "$spacer 1rem, where the design system pulls the surtitle back onto the title."
+      }
+    }
+  }
+}

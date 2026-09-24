@@ -1,0 +1,14 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* theme/components/dropdown.css */
+@layer tokens {
+  :root {
+    --dropdown-item-border-radius: var(--radius-surface);
+    --dropdown-item-font-size: var(--font-size-sm);
+    --dropdown-item-padding-inline: var(--size-16);
+    --dropdown-item-padding-block: var(--size-16);
+    --dropdown-min-width: 340px;
+    --dropdown-padding: var(--size-8);
+    --dropdown-shadow: var(--shadow-lg);
+  }
+}

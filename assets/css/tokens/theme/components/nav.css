@@ -1,0 +1,9 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* theme/components/nav.css */
+@layer tokens {
+  :root {
+    --nav-font-size: var(--font-size-sm);
+    --nav-font-weight: var(--font-weight-control);
+  }
+}

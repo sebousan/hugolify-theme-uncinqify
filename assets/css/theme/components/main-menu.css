@@ -1,0 +1,75 @@
+/* theme/components/main-menu.css */
+/*
+ * The primary menu's dropdowns are panels, not lists of links: each item is a
+ * title plus a line of description, the whole item is the click target, and the
+ * open panel reads as one white card with its trigger.
+ *
+ * Sizes, radius, padding and shadow are tokens — see
+ * assets/tokens/theme/components/dropdown.json. Only the structure is here.
+ */
+@layer components {
+  .main-menu {
+    .nav-item-highlighted .btn {
+      --btn-padding-block: var(--size-12);
+    }
+
+    /* ── Expanded: the header bar ─────────────────────────────────── */
+
+    @media (--header-expand) {
+      /* Trigger and panel share one surface while the panel is open */
+      .dropdown:has(.dropdown-menu.show) {
+        background-color: var(--color-white);
+        border-radius: var(--radius-surface);
+      }
+
+      .dropdown-menu {
+        li {
+          border-radius: var(--dropdown-item-border-radius);
+          padding-block: var(--dropdown-item-padding-block);
+          padding-inline: var(--dropdown-item-padding-inline);
+        }
+
+        /* The item carries its own padding, so the link inside it is bare and
+           stretches over the whole item — description included. */
+        li a {
+          font-weight: var(--font-weight-control);
+          padding: 0;
+          white-space: normal;
+
+          &::before {
+            content: '';
+            inset: 0;
+            position: absolute;
+          }
+        }
+
+        li p {
+          color: var(--color-text-muted);
+          font-size: var(--font-size-xs);
+          margin-block: 0;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+          /* Hover belongs to the item, not to the link it wraps */
+          li:hover {
+            background-color: var(--dropdown-item-color-background-hover);
+          }
+
+          li a:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    /* ── Panel: the mobile drawer ────────────────────────────────── */
+
+    /* The design system already flattens the dropdown into an inline sub-list
+       here; the sub-items keep the tinted surface they had in the SASS theme. */
+    @media not (--header-expand) {
+      .dropdown-menu li {
+        background-color: var(--color-background-muted);
+      }
+    }
+  }
+}

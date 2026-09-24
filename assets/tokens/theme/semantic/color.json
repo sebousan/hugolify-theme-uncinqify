@@ -1,0 +1,37 @@
+{
+  "color": {
+    "brand": {
+      "default": {
+        "$value": "{color.black}",
+        "$type": "color",
+        "$description": "Un Cinq brand colour — $primary #000000 in the SASS theme."
+      },
+      "hover": {
+        "$value": "oklch(32.11% 0 0)",
+        "$type": "color",
+        "$description": "$secondary #333333."
+      },
+      "muted": {
+        "$value": "oklch(from {color.black} l c h / 0.1)",
+        "$type": "color",
+        "$description": "Translucent brand surface — rgba($primary, .1), the surtitle badge background."
+      },
+      "strong": {
+        "$value": "{color.black}",
+        "$type": "color"
+      }
+    },
+    "cream": {
+      "$value": "oklch(98.15% 0.027 93.1)",
+      "$type": "color",
+      "$description": "$secondary_light #fff9e5 — the hover surface of the page cards."
+    },
+    "text": {
+      "default": {
+        "$value": "{color.black}",
+        "$type": "color",
+        "$description": "$body-color black, where the design system defaults to gray 900."
+      }
+    }
+  }
+}

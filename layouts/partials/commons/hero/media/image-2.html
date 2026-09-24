@@ -1,0 +1,21 @@
+{{- /*
+  commons/hero/media/image-2.html — the second hero image.
+
+  Mirrors the core's commons/hero/media/image.html, with two differences: the
+  sizes come from params.hero.image_2 rather than params.hero, and the image is
+  lazy — it hangs below the fold of the header.
+
+  Context: the `image_2` map itself, not the hero.
+*/ -}}
+
+<div class="hero-media">
+  {{- $desktop := site.Params.hero.image_2.desktop -}}
+  {{- $mobile := site.Params.hero.image_2.mobile -}}
+  {{- $sizes := site.Params.hero.image_2.sizes -}}
+  {{- $args := merge . (dict
+    "desktop" $desktop
+    "mobile" $mobile
+    "sizes" (.sizes | default $sizes)
+    )}}
+  {{- partial "commons/image.html" $args -}}
+</div>

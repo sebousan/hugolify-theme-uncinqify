@@ -1,0 +1,16 @@
+{
+  "doc": {
+    "padding": {
+      "block": {
+        "$value": "{size.20}",
+        "$type": "dimension",
+        "$description": "--bs-card-spacer-y 1.25rem — the doc cards sit tighter than the page cards."
+      },
+      "inline": {
+        "$value": "{size.20}",
+        "$type": "dimension",
+        "$description": "--bs-card-spacer-x 1.25rem."
+      }
+    }
+  }
+}

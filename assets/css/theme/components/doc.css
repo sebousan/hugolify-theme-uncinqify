@@ -1,0 +1,9 @@
+/* theme/components/doc.css */
+@layer components {
+  /* Documentation cards sit tighter than page cards */
+  .doc {
+    --item-padding-block-end: var(--doc-padding-block);
+    --item-padding-block-start: var(--doc-padding-block);
+    --item-padding-inline: var(--doc-padding-inline);
+  }
+}

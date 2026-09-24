@@ -1,0 +1,11 @@
+{
+  "details": {
+    "summary": {
+      "fontSize": {
+        "$value": "{fontSize.sm}",
+        "$type": "dimension",
+        "$description": "1rem, where the design system opens at --font-size-md."
+      }
+    }
+  }
+}

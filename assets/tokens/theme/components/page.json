@@ -1,0 +1,51 @@
+{
+  "page": {
+    "border": {
+      "radius": {
+        "$value": "{radius.surface}",
+        "$type": "dimension",
+        "$description": "1rem."
+      }
+    },
+    "color": {
+      "background": {
+        "default": {
+          "$value": "{color.background.muted.default}",
+          "$type": "color",
+          "$description": "$light."
+        },
+        "hover": {
+          "$value": "{color.cream}",
+          "$type": "color",
+          "$description": "$secondary_light — the card turns cream under the pointer."
+        },
+        "onBg": {
+          "default": {
+            "$value": "{color.background.muted.hover}",
+            "$type": "color",
+            "$description": "darken($light, 2) inside a .block-bg section."
+          }
+        }
+      }
+    },
+    "media": {
+      "ratio": {
+        "$value": "{ratio.landscape}",
+        "$type": "string",
+        "$description": "--bs-aspect-ratio 75%."
+      }
+    },
+    "padding": {
+      "block": {
+        "$value": "{size.32}",
+        "$type": "dimension",
+        "$description": "--bs-card-spacer-y 2rem."
+      },
+      "inline": {
+        "$value": "{size.32}",
+        "$type": "dimension",
+        "$description": "--bs-card-spacer-x 2rem."
+      }
+    }
+  }
+}

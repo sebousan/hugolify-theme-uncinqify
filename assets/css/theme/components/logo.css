@@ -1,0 +1,8 @@
+/* theme/components/logo.css */
+@layer components {
+  /* The wordmark is set in caps. Size, weight, tracking and colour are tokens
+     the design system already reads; text-transform is not one of them. */
+  .logo {
+    text-transform: var(--logo-text-transform);
+  }
+}

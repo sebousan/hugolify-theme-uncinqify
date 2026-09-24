@@ -1,0 +1,9 @@
+/* theme/base/typography.css */
+@layer base {
+  /* Body text runs at 300, so bold has to be spelled out — and it stops at 500,
+     the SASS theme's $font-weight-bold, not at the browser's 700. */
+  b,
+  strong {
+    font-weight: var(--font-weight-control);
+  }
+}

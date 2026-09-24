@@ -1,0 +1,17 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* theme/components/btn.css */
+@layer tokens {
+  :root {
+    --btn-font-size: var(--font-size-xs);
+    --btn-font-weight: var(--font-weight-bold);
+    --btn-gap: var(--size-8);
+    --btn-padding-inline: var(--size-16);
+    --btn-padding-block: var(--size-16);
+    --btn-text-transform: uppercase;
+    --btn-letter-spacing: var(--letter-spacing-md);
+    --btn-icon: var(--icon-arrow);
+    --btn-icon-size: var(--size-22);
+    --btn-icon-translate-hover: 0.3rem;
+  }
+}

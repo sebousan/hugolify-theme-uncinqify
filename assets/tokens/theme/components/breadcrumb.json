@@ -1,0 +1,16 @@
+{
+  "breadcrumb": {
+    "fontSize": {
+      "$value": "{fontSize.2xs}",
+      "$type": "dimension",
+      "$description": "$breadcrumb-font-size 0.75rem."
+    },
+    "padding": {
+      "block": {
+        "$value": "{size.10}",
+        "$type": "dimension",
+        "$description": "$breadcrumb-padding-y px2rem(10)."
+      }
+    }
+  }
+}

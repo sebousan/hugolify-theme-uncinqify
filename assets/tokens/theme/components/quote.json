@@ -1,0 +1,9 @@
+{
+  "quote": {
+    "fontSize": {
+      "$value": "clamp(1.365rem, 0.9886rem + 1.8818vw, 2.4rem)",
+      "$type": "dimension",
+      "$description": "$blockquote-font-size 2.4rem, on the same RFS curve as the headings."
+    }
+  }
+}

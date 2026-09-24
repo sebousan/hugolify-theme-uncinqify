@@ -1,0 +1,8 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* theme/components/quote.css */
+@layer tokens {
+  :root {
+    --quote-font-size: clamp(1.365rem, 0.9886rem + 1.8818vw, 2.4rem);
+  }
+}

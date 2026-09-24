@@ -1,0 +1,7 @@
+/* theme/pages/sites-de-demonstration.css */
+@layer pages {
+  /* The demo screenshots close the section themselves */
+  .section-sites-de-demonstration .block-figure {
+    padding-block-end: 0;
+  }
+}

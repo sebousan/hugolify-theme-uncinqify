@@ -1,0 +1,9 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* theme/components/hero.css */
+@layer tokens {
+  :root {
+    --hero-content-width: 50%;
+    --hero-content-width-home: 58.333%;
+  }
+}

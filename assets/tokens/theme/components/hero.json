@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "content": {
+      "width": {
+        "default": {
+          "$value": "50%",
+          "$type": "dimension",
+          "$description": "col-xl-6. The split happens at --md, not at --sm: the SASS theme kept the hero stacked below 1200px."
+        },
+        "home": {
+          "$value": "58.333%",
+          "$type": "dimension",
+          "$description": "col-xl-7 — the home hero gives its text one column more."
+        }
+      }
+    }
+  }
+}

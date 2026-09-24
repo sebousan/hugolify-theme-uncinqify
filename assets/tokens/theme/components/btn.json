@@ -1,0 +1,57 @@
+{
+  "btn": {
+    "fontSize": {
+      "$value": "{fontSize.xs}",
+      "$type": "dimension",
+      "$description": "px2rem(14) in the SASS theme."
+    },
+    "fontWeight": {
+      "$value": "{fontWeight.bold}",
+      "$type": "fontWeight"
+    },
+    "gap": {
+      "$value": "{size.8}",
+      "$type": "dimension",
+      "$description": "0.5rem between the arrow and the label."
+    },
+    "letterSpacing": {
+      "$value": "{letterSpacing.md}",
+      "$type": "dimension",
+      "$description": "0.05em. Read by theme/components/btn.css: the design system's .btn sets no letter-spacing of its own."
+    },
+    "padding": {
+      "block": {
+        "$value": "{size.16}",
+        "$type": "dimension",
+        "$description": "$btn-padding-y 1rem."
+      },
+      "inline": {
+        "$value": "{size.16}",
+        "$type": "dimension",
+        "$description": "$btn-padding-x 1rem."
+      }
+    },
+    "textTransform": {
+      "$value": "uppercase",
+      "$type": "string"
+    },
+    "icon": {
+      "default": {
+        "$value": "{icon.arrow}",
+        "$type": "string",
+        "$description": "The arrow the link-arrow mixin drew with the bootstrap-icons font."
+      },
+      "size": {
+        "$value": "{size.22}",
+        "$type": "dimension",
+        "$description": "1.4rem, the mixin's icon font-size."
+      },
+      "translate": {
+        "hover": {
+          "$value": "0.3rem",
+          "$type": "dimension"
+        }
+      }
+    }
+  }
+}

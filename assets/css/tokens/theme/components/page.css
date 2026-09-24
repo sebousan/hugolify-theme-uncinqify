@@ -1,0 +1,14 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* theme/components/page.css */
+@layer tokens {
+  :root {
+    --page-border-radius: var(--radius-surface);
+    --page-color-background: var(--color-background-muted);
+    --page-color-background-hover: var(--color-cream);
+    --page-color-background-on-bg: var(--color-background-muted-hover);
+    --page-media-ratio: var(--ratio-landscape);
+    --page-padding-block: var(--size-32);
+    --page-padding-inline: var(--size-32);
+  }
+}

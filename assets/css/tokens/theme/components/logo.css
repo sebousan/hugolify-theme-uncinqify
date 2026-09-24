@@ -1,0 +1,12 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* theme/components/logo.css */
+@layer tokens {
+  :root {
+    --logo-color: var(--color-brand);
+    --logo-font-size: var(--size-22);
+    --logo-font-weight: var(--font-weight-bold);
+    --logo-letter-spacing: var(--letter-spacing-lg);
+    --logo-text-transform: uppercase;
+  }
+}

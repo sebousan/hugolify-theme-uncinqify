@@ -1,0 +1,14 @@
+{
+  "radius": {
+    "control": {
+      "$value": "{radius.xs}",
+      "$type": "dimension",
+      "$description": "$border-radius 4px — every Bootstrap radius was flattened to 4px in the SASS theme."
+    },
+    "surface": {
+      "$value": "{radius.lg}",
+      "$type": "dimension",
+      "$description": "1rem — the radius the page cards and the desktop dropdown carried."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "fontFamily": {
+    "heading": {
+      "$value": "Roboto, system-ui, -apple-system, \"Segoe UI\", \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "$type": "fontFamily",
+      "$description": "$headings-font-family. Only the 700 face is self-hosted — see assets/css/theme/base/fonts.css."
+    }
+  },
+  "fontSize": {
+    "heading": {
+      "01": {
+        "$value": "clamp(1.4375rem, 0.8239rem + 3.0682vw, 3.125rem)",
+        "$type": "dimension",
+        "$description": "$h1-font-size 3.125rem. The clamp reproduces Bootstrap RFS: caps at 1200px, floors at the RFS minimum 23px."
+      },
+      "02": {
+        "$value": "clamp(1.375rem, 0.9659rem + 2.0455vw, 2.5rem)",
+        "$type": "dimension",
+        "$description": "$h2-font-size 2.5rem, same RFS curve."
+      }
+    },
+    "small": {
+      "$value": "{fontSize.2xs}",
+      "$type": "dimension",
+      "$description": "$small-font-size 0.75rem."
+    }
+  },
+  "fontWeight": {
+    "text": {
+      "$value": "{fontWeight.light}",
+      "$type": "fontWeight",
+      "$description": "$font-weight-normal 300. $font-weight-bold 500 is the design system's own --font-weight-control, so b and strong point at that token instead."
+    }
+  }
+}

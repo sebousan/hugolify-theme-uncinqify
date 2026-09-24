@@ -1,0 +1,43 @@
+{
+  "dropdown": {
+    "item": {
+      "border": {
+        "radius": {
+          "$value": "{radius.surface}",
+          "$type": "dimension",
+          "$description": "The items carry the panel's own 1rem radius."
+        }
+      },
+      "fontSize": {
+        "$value": "{fontSize.sm}",
+        "$type": "dimension",
+        "$description": "--bs-nav-link-font-size 1rem."
+      },
+      "padding": {
+        "block": {
+          "$value": "{size.16}",
+          "$type": "dimension"
+        },
+        "inline": {
+          "$value": "{size.16}",
+          "$type": "dimension"
+        }
+      }
+    },
+    "minWidth": {
+      "$value": "340px",
+      "$type": "dimension",
+      "$description": "The primary menu's panels are wide enough for a title plus its description."
+    },
+    "padding": {
+      "$value": "{size.8}",
+      "$type": "dimension",
+      "$description": "--bs-dropdown-padding .5rem."
+    },
+    "shadow": {
+      "$value": "{shadow.lg}",
+      "$type": "shadow",
+      "$description": "Closest token to the soft drop shadow the SASS theme painted by hand."
+    }
+  }
+}

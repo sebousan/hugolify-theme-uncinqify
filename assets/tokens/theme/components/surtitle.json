@@ -1,0 +1,37 @@
+{
+  "surtitle": {
+    "border": {
+      "radius": {
+        "$value": "{radius.control}",
+        "$type": "dimension"
+      }
+    },
+    "color": {
+      "background": {
+        "$value": "{color.brand.muted}",
+        "$type": "color",
+        "$description": "rgba($primary, .1) — the badge the surtitle extended in the SASS theme."
+      },
+      "text": {
+        "$value": "{color.brand.default}",
+        "$type": "color"
+      }
+    },
+    "fontSize": {
+      "$value": "{fontSize.2xs}",
+      "$type": "dimension"
+    },
+    "padding": {
+      "block": {
+        "$value": "0.35em",
+        "$type": "dimension",
+        "$description": "$badge-padding-y."
+      },
+      "inline": {
+        "$value": "0.65em",
+        "$type": "dimension",
+        "$description": "$badge-padding-x."
+      }
+    }
+  }
+}

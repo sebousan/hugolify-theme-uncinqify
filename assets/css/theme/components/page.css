@@ -1,0 +1,38 @@
+/* theme/components/page.css */
+/*
+ * .page — the card a page item renders as. The design system's own page.css
+ * already flattens the button inside it; this adds the Un Cinq skin: a light
+ * surface that turns cream under the pointer, roomy padding, and a thumbnail
+ * that is contained rather than cropped.
+ */
+@layer components {
+  .page {
+    --item-border-radius: var(--page-border-radius);
+    --item-color-background: var(--page-color-background);
+    --item-media-ratio: var(--page-media-ratio);
+    --item-padding-block-end: var(--page-padding-block);
+    --item-padding-block-start: var(--page-padding-block);
+    --item-padding-inline: var(--page-padding-inline);
+    /* The base item only transitions its shadow, and the surface is what moves here */
+    --item-transition: var(--transition-box-shadow), var(--transition-color);
+
+    .media img {
+      object-fit: contain;
+    }
+  }
+
+  /* Inside a tinted section the card steps one shade darker, and the thumbnail
+     lets that surface through. */
+  .block-bg .page {
+    --item-color-background: var(--page-color-background-on-bg);
+    --item-media-color-background: transparent;
+  }
+
+  /* Last, so the cream holds on both surfaces — the two selectors above weigh
+     the same, and this one has to outrank whichever of them applies. */
+  @media (hover: hover) and (pointer: fine) {
+    .page:hover {
+      --item-color-background: var(--page-color-background-hover);
+    }
+  }
+}

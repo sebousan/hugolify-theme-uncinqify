@@ -1,0 +1,16 @@
+/* theme/components/surtitle.css */
+@layer components {
+  /* The surtitle is a badge here, not a line of text: it gets a tinted
+     background from --surtitle-color-background, so it has to stop at its own
+     content instead of spanning the column. */
+  .surtitle {
+    display: inline-block;
+    text-decoration: none;
+
+    /* A back link inside a surtitle is prose again */
+    .back {
+      letter-spacing: var(--letter-spacing-none);
+      text-transform: none;
+    }
+  }
+}
