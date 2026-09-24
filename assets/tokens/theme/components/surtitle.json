@@ -8,9 +8,11 @@
     },
     "color": {
       "background": {
-        "$value": "{color.brand.muted}",
-        "$type": "color",
-        "$description": "rgba($primary, .1) — the badge the surtitle extended in the SASS theme."
+        "opacity": {
+          "$value": "0.1",
+          "$type": "number",
+          "$description": "How far the badge steps off its ground. The colour itself is not a token: theme/components/surtitle.css derives it from --color-text, which only resolves correctly when declared on the component. rgba($primary, .1) in the SASS theme."
+        }
       },
       "text": {
         "$value": "{color.brand.default}",

@@ -4,7 +4,7 @@
 @layer tokens {
   :root {
     --surtitle-color-text: var(--color-brand);
-    --surtitle-color-background: var(--color-brand-muted);
+    --surtitle-color-background-opacity: 0.1;
     --surtitle-font-size: var(--font-size-2xs);
     --surtitle-border-radius: var(--radius-control);
     --surtitle-padding-block: 0.35em;

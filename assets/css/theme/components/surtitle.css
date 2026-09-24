@@ -7,6 +7,22 @@
     display: inline-block;
     text-decoration: none;
 
+    /* One step off whatever ground the badge lands on, with nothing to
+       detect. Two properties carry it:
+       - the veil is translucent, so the ground composites at paint time
+         rather than having to be read at computed-value time — no token
+         has to publish "the surface I sit on", and a card, a block or a
+         push all work the same;
+       - it is tinted with --color-text, which every theme already
+         guarantees readable on its own ground, so "toward the text" is
+         "toward contrast": darker on a light ground, lighter on a dark
+         one, with no lightness to branch on.
+       Declared here and not in the token file, which is the whole point: a
+       custom property substitutes where it is declared, so :root would
+       freeze the page's own text colour into it and the badge would land a
+       dark veil on a dark block. */
+    --surtitle-color-background: oklch(from var(--color-text) l c h / var(--surtitle-color-background-opacity));
+
     /* A back link inside a surtitle is prose again */
     .back {
       letter-spacing: var(--letter-spacing-none);
