@@ -16,9 +16,12 @@
     /* ── Expanded: the header bar ─────────────────────────────────── */
 
     @media (--header-expand) {
-      /* Trigger and panel share one surface while the panel is open */
+      /* Trigger and panel share one surface while the panel is open. The
+         surface is the panel's own token, not a literal colour: on a site that
+         sets a dark scheme this has to follow it, or the trigger would keep a
+         white card behind white text. */
       .dropdown:has(.dropdown-menu.show) {
-        background-color: var(--color-white);
+        background-color: var(--dropdown-color-background);
         border-radius: var(--radius-surface);
       }
 

@@ -9,6 +9,17 @@ module:
 
 # Params
 params:
+  # CSS
+  # No light/dark switching: the palette of a site is the palette of that site,
+  # whatever the visitor's OS says. This is already the core's default, but
+  # spelling it out is what keeps @uncinq/design-tokens' themes/dark.css asleep
+  # — the core turns this param into data-color-scheme="light" on <html>, and
+  # that attribute is exactly what the dark block excludes itself on.
+  # A site that must read dark does it with its own tokens, not with this
+  # switch: darkmode: true would mean "follow the OS", never "always dark".
+  css:
+    darkmode: false
+
   # Image
   # _merge: deep, because both keys already exist upstream — hero in
   # hugolify-theme, casestudies in hugolify-theme-casestudies — and what follows
