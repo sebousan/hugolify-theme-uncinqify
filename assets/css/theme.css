@@ -29,7 +29,6 @@
 /* Blocks */
 @import './theme/components/blocks/block-cta.css';
 @import './theme/components/blocks/block-editorial.css';
-@import './theme/components/blocks/block-informations.css';
 
 /* Pages */
 @import './theme/pages/home.css';

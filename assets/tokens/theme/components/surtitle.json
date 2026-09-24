@@ -9,7 +9,7 @@
     "color": {
       "background": {
         "opacity": {
-          "$value": "0.1",
+          "$value": "{opacity.shadow}",
           "$type": "number",
           "$description": "How far the badge steps off its ground. The colour itself is not a token: theme/components/surtitle.css derives it from --color-text, which only resolves correctly when declared on the component. rgba($primary, .1) in the SASS theme."
         }
