@@ -5,7 +5,7 @@
   :root {
     --btn-font-size: var(--font-size-xs);
     --btn-font-weight: var(--font-weight-bold);
-    --btn-gap: var(--size-8);
+    --btn-gap: var(--spacing-xs);
     --btn-padding-inline: var(--spacing-sm);
     --btn-padding-block: var(--spacing-sm);
     --btn-text-transform: uppercase;

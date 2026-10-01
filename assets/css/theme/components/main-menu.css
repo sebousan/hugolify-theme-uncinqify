@@ -10,7 +10,7 @@
 @layer components {
   .main-menu {
     .nav-item-highlighted .btn {
-      --btn-padding-block: var(--size-12);
+      --btn-padding-block: var(--spacing-xs);
     }
 
     /* ── Expanded: the header bar ─────────────────────────────────── */

@@ -10,7 +10,7 @@
       "$type": "fontWeight"
     },
     "gap": {
-      "$value": "{size.8}",
+      "$value": "{spacing.xs}",
       "$type": "dimension",
       "$description": "0.5rem between the arrow and the label."
     },
