@@ -21,14 +21,12 @@
     },
     "padding": {
       "block": {
-        "$value": "{size.16}",
-        "$type": "dimension",
-        "$description": "$btn-padding-y 1rem."
+        "$value": "{spacing.sm}",
+        "$type": "dimension"
       },
       "inline": {
-        "$value": "{size.16}",
-        "$type": "dimension",
-        "$description": "$btn-padding-x 1rem."
+        "$value": "{spacing.sm}",
+        "$type": "dimension"
       }
     },
     "textTransform": {

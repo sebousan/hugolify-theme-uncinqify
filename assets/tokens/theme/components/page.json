@@ -37,12 +37,12 @@
     },
     "padding": {
       "block": {
-        "$value": "{size.32}",
+        "$value": "{spacing.md}",
         "$type": "dimension",
         "$description": "--bs-card-spacer-y 2rem."
       },
       "inline": {
-        "$value": "{size.32}",
+        "$value": "{spacing.md}",
         "$type": "dimension",
         "$description": "--bs-card-spacer-x 2rem."
       }

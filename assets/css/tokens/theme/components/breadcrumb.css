@@ -4,6 +4,6 @@
 @layer tokens {
   :root {
     --breadcrumb-font-size: var(--font-size-2xs);
-    --breadcrumb-padding-block: var(--size-10);
+    --breadcrumb-padding-block: var(--spacing-xs);
   }
 }

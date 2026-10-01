@@ -6,8 +6,8 @@
     --btn-font-size: var(--font-size-xs);
     --btn-font-weight: var(--font-weight-bold);
     --btn-gap: var(--size-8);
-    --btn-padding-inline: var(--size-16);
-    --btn-padding-block: var(--size-16);
+    --btn-padding-inline: var(--spacing-sm);
+    --btn-padding-block: var(--spacing-sm);
     --btn-text-transform: uppercase;
     --btn-letter-spacing: var(--letter-spacing-md);
     --btn-icon: var(--icon-arrow);

@@ -5,10 +5,10 @@
   :root {
     --dropdown-item-border-radius: var(--radius-surface);
     --dropdown-item-font-size: var(--font-size-sm);
-    --dropdown-item-padding-inline: var(--size-16);
-    --dropdown-item-padding-block: var(--size-16);
+    --dropdown-item-padding-inline: var(--spacing-sm);
+    --dropdown-item-padding-block: var(--spacing-sm);
     --dropdown-min-width: 340px;
-    --dropdown-padding: var(--size-8);
+    --dropdown-padding: var(--spacing-xs);
     --dropdown-shadow: var(--shadow-lg);
   }
 }

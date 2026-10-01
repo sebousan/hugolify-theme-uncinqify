@@ -3,7 +3,7 @@
 /* theme/components/doc.css */
 @layer tokens {
   :root {
-    --doc-padding-block: var(--size-20);
-    --doc-padding-inline: var(--size-20);
+    --doc-padding-block: var(--spacing-sm);
+    --doc-padding-inline: var(--spacing-sm);
   }
 }

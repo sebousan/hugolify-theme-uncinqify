@@ -15,11 +15,11 @@
       },
       "padding": {
         "block": {
-          "$value": "{size.16}",
+          "$value": "{spacing.sm}",
           "$type": "dimension"
         },
         "inline": {
-          "$value": "{size.16}",
+          "$value": "{spacing.sm}",
           "$type": "dimension"
         }
       }
@@ -30,7 +30,7 @@
       "$description": "The primary menu's panels are wide enough for a title plus its description."
     },
     "padding": {
-      "$value": "{size.8}",
+      "$value": "{spacing.xs}",
       "$type": "dimension",
       "$description": "--bs-dropdown-padding .5rem."
     },

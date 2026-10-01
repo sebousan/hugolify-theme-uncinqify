@@ -3,6 +3,6 @@
 /* theme/components/heading.css */
 @layer tokens {
   :root {
-    --heading-surtitle-margin-block-end: var(--size-16);
+    --heading-surtitle-margin-block-end: var(--spacing-sm);
   }
 }
