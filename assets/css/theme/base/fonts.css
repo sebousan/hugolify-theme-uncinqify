@@ -7,7 +7,7 @@
  * other .woff2 files in static/ are unused, exactly as in the SASS theme.
  *
  * The url() is relative to the compiled stylesheet, /assets/css/main.css, and
- * PostCSS does not rebase it — which is why it walks up one level, not two.
+ * PostCSS does not rebase it, which is why it walks up one level, not two.
  */
 @font-face {
   font-display: swap;

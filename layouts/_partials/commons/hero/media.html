@@ -1,10 +1,11 @@
 {{- /*
-  commons/hero/media.html — overrides the core partial to add `image_2`.
+  commons/hero/media.html: overrides the core partial to add `image_2`.
 
   The core dispatch is reproduced as is: one of image / video, never both, and
   never when the media is a background (that one is drawn by hero/cover.html).
   A partial cannot call the file it shadows, which is why the dispatch is copied
-  rather than delegated — keep it in step with hugolify-theme/v2.
+  rather than delegated: keep it in step with hugolify-theme/v2
+  (layouts/_partials/commons/hero/media.html).
 
   Then comes what the core knows nothing about: a second hero image, from the
   `image_2` front matter key, sized by params.hero.image_2 and positioned by

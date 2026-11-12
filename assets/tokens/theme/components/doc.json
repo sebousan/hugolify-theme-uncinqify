@@ -4,7 +4,7 @@
       "block": {
         "$value": "{spacing.sm}",
         "$type": "dimension",
-        "$description": "--bs-card-spacer-y 1.25rem — the doc cards sit tighter than the page cards."
+        "$description": "--bs-card-spacer-y 1.25rem: the doc cards sit tighter than the page cards."
       },
       "inline": {
         "$value": "{spacing.sm}",

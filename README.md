@@ -17,7 +17,7 @@ imports:
   # Core theme
   - path: github.com/hugolify/hugolify-theme/v2
 
-  # Styling — one of the two
+  # Styling, one of the two
   - path: github.com/hugolify/hugolify-theme-design-system # CSS + design tokens
   # - path: github.com/hugolify/hugolify-theme-bootstrap   # SASS + Bootstrap 5
 ```
@@ -35,9 +35,9 @@ imports:
 ## Documentation
 
 - [Hugolify documentation](https://www.hugolify.io/docs/)
-- [Migration from v1 to v2](https://www.hugolify.io/docs/getting-started/migration/) — what changes in a project moving to the v2 stack
-- [Design modules](https://www.hugolify.io/docs/customization/design/) — design system and Bootstrap compared
-- [Un Cinq design system](https://socle.uncinq.dev/docs/) — the token and CSS packages the design system builds on
+- [Migration from v1 to v2](https://www.hugolify.io/docs/getting-started/migration/): what changes in a project moving to the v2 stack
+- [Design modules](https://www.hugolify.io/docs/customization/design/): design system and Bootstrap compared
+- [Un Cinq design system](https://socle.uncinq.dev/docs/): the token and CSS packages the design system builds on
 
 ## Design tokens
 
@@ -48,16 +48,19 @@ npm install
 npm run build
 ```
 
-This writes `assets/css/tokens/theme/**.css` plus the `assets/css/tokens/theme.css` barrel, both committed — Hugo reads the generated CSS, never the JSON. Run it after touching any token file.
+This writes `assets/css/tokens/theme/**.css` plus the `assets/css/tokens/theme.css` barrel, both committed: Hugo reads the generated CSS, never the JSON. Run it after touching any token file, and never edit the generated CSS by hand: the next build overwrites it.
+
+These tools only build the tokens here, a site never needs them: `hugo mod npm pack` reads `package.hugo.json`, which lists no dependency, instead of `package.json`.
 
 Hand-written CSS lives in `assets/css/theme/` and is imported by `assets/css/theme.css`. Values that are design decisions belong in a token file, not in the CSS.
 
 ## Releasing
 
-Tags are `v`-prefixed (`v2.0.0`): a `/v2` module path is only resolvable from a `v2.x.y` semver tag.
+Tags are `v`-prefixed (`v2.0.0`): a `/v2` module path is only resolvable from a `v2.x.y` semver tag. `main` still carries v1 (`v1.2.2`), so the first v2 release has to be forced to the next major:
 
 ```bash
-npx release-it
+npx release-it major   # first v2 release: v2.0.0
+npx release-it         # afterwards
 ```
 
 ## Licensing

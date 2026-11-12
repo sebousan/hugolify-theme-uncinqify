@@ -3,7 +3,7 @@
     "heading": {
       "$value": "Roboto, system-ui, -apple-system, \"Segoe UI\", \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "$type": "fontFamily",
-      "$description": "$headings-font-family. Only the 700 face is self-hosted — see assets/css/theme/base/fonts.css."
+      "$description": "$headings-font-family. Only the 700 face is self-hosted, see assets/css/theme/base/fonts.css."
     }
   },
   "fontSize": {
@@ -18,11 +18,6 @@
         "$type": "dimension",
         "$description": "$h2-font-size 2.5rem, same RFS curve."
       }
-    },
-    "small": {
-      "$value": "{fontSize.2xs}",
-      "$type": "dimension",
-      "$description": "$small-font-size 0.75rem."
     }
   },
   "fontWeight": {

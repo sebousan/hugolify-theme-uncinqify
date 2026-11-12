@@ -26,7 +26,7 @@
     }
   }
 
-  /* Second image — absolute against .hero .container, which the design system
+  /* Second image: absolute against .hero .container, which the design system
      already positions. It hangs below the header's bottom edge, and shifts
      across as the row gets wider. The percentages are the col-xl-4 / col-xxl-5
      and offset the SASS theme expressed through the Bootstrap grid. */

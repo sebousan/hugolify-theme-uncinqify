@@ -2,15 +2,18 @@
 @layer components {
   /* The surtitle is a badge here, not a line of text: it gets a tinted
      background from --surtitle-color-background, so it has to stop at its own
-     content instead of spanning the column. */
+     content instead of spanning the column. inline-block alone does not do it
+     in a flex column (the design system's .heading is one), where the item is
+     stretched across: a fit-content width is what stops it. */
   .surtitle {
     display: inline-block;
+    inline-size: fit-content;
     text-decoration: none;
 
     /* One step off whatever ground the badge lands on, with nothing to
        detect. Two properties carry it:
        - the veil is translucent, so the ground composites at paint time
-         rather than having to be read at computed-value time — no token
+         rather than having to be read at computed-value time, so no token
          has to publish "the surface I sit on", and a card, a block or a
          push all work the same;
        - it is tinted with --color-text, which every theme already

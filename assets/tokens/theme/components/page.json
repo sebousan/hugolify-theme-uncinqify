@@ -17,7 +17,7 @@
         "hover": {
           "$value": "{color.cream}",
           "$type": "color",
-          "$description": "$secondary_light — the card turns cream under the pointer."
+          "$description": "$secondary_light: the card turns cream under the pointer."
         },
         "onBg": {
           "default": {

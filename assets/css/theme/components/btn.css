@@ -1,7 +1,7 @@
 /* theme/components/btn.css */
 /*
  * Un Cinq buttons are uppercase, letter-spaced, and led by an arrow that slides
- * on hover — the link-arrow mixin of the SASS theme, redrawn as a masked icon
+ * on hover: the link-arrow mixin of the SASS theme, redrawn as a masked icon
  * the way the design system draws .more and .back.
  *
  * The arrow is only for buttons that go somewhere. Controls that open, close or

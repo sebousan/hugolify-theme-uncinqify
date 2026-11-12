@@ -10,7 +10,7 @@
         "home": {
           "$value": "58.333%",
           "$type": "dimension",
-          "$description": "col-xl-7 — the home hero gives its text one column more."
+          "$description": "col-xl-7: the home hero gives its text one column more."
         }
       }
     }

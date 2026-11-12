@@ -52,7 +52,7 @@ StyleDictionary.registerTransformGroup({
 });
 
 // -------------------------------------------------------
-// Format — @layer tokens
+// Format: @layer tokens
 // -------------------------------------------------------
 
 StyleDictionary.registerFormat({
@@ -84,7 +84,7 @@ const rel = file => path.relative(tokensRoot, file).replace(/\.json$/, '');
 
 for (const pkg of ['@uncinq/design-tokens', '@uncinq/component-tokens']) {
   if (!fs.existsSync(`./node_modules/${pkg}`)) {
-    throw new Error(`Missing ${pkg} — run npm install first.`);
+    throw new Error(`Missing ${pkg}: run npm install first.`);
   }
 }
 
@@ -110,9 +110,9 @@ await new StyleDictionary({
 }).buildAllPlatforms();
 
 // -------------------------------------------------------
-// Single barrel — assets/css/tokens/theme.css imports every generated token
+// Single barrel: assets/css/tokens/theme.css imports every generated token
 // file, grouped by folder (components, semantic, …). Files are discovered from
-// disk, so adding a JSON — or a whole new group — needs no manual edit;
+// disk, so adding a JSON, or a whole new group, needs no manual edit;
 // hugolify-theme-design-system imports tokens/theme.css, and this module's
 // mount shadows the empty placeholder it ships. Each file declares its own
 // @layer tokens, so a plain @import is enough. A token file that produced no
@@ -134,7 +134,7 @@ if (missing.length) {
 
 fs.writeFileSync(
   './assets/css/tokens/theme.css',
-  '/* theme.css — barrel, do not edit */\n\n' +
+  '/* theme.css: barrel, do not edit */\n\n' +
     Object.keys(groups).sort().map(group =>
       `/* ${group} */\n` + groups[group].map(r => `@import "./${r}.css";`).join('\n'),
     ).join('\n\n') + '\n',

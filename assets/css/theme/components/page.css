@@ -1,6 +1,6 @@
 /* theme/components/page.css */
 /*
- * .page — the card a page item renders as. The design system's own page.css
+ * .page: the card a page item renders as. The design system's own page.css
  * already flattens the button inside it; this adds the Un Cinq skin: a light
  * surface that turns cream under the pointer, roomy padding, and a thumbnail
  * that is contained rather than cropped.
@@ -28,7 +28,7 @@
     --item-media-color-background: transparent;
   }
 
-  /* Last, so the cream holds on both surfaces — the two selectors above weigh
+  /* Last, so the cream holds on both surfaces: the two selectors above weigh
      the same, and this one has to outrank whichever of them applies. */
   @media (hover: hover) and (pointer: fine) {
     .page:hover {

@@ -4,7 +4,7 @@
  * title plus a line of description, the whole item is the click target, and the
  * open panel reads as one white card with its trigger.
  *
- * Sizes, radius, padding and shadow are tokens — see
+ * Sizes, radius, padding and shadow are tokens, see
  * assets/tokens/theme/components/dropdown.json. Only the structure is here.
  */
 @layer components {
@@ -33,7 +33,7 @@
         }
 
         /* The item carries its own padding, so the link inside it is bare and
-           stretches over the whole item — description included. */
+           stretches over the whole item, description included. */
         li a {
           font-weight: var(--font-weight-control);
           padding: 0;
