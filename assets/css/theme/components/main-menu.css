@@ -9,10 +9,6 @@
  */
 @layer components {
   .main-menu {
-    .nav-item-highlighted .btn {
-      --btn-padding-block: var(--spacing-xs);
-    }
-
     /* ── Expanded: the header bar ─────────────────────────────────── */
 
     @media (--header-expand) {

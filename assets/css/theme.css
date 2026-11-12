@@ -16,6 +16,9 @@
 @import './theme/base/fonts.css';
 @import './theme/base/typography.css';
 
+/* Layouts */
+@import './theme/layouts/header.css';
+
 /* Components */
 @import './theme/components/btn.css';
 @import './theme/components/casestudy.css';
