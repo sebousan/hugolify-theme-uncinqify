@@ -1,0 +1,23 @@
+/* theme/components/casestudy.css */
+@layer components {
+  /* A case study thumbnail is a client logo: it sits inset inside its media box
+     and is contained, where the design system fills and crops. The picture is
+     taken out of flow so the media keeps its own aspect ratio. */
+  .casestudy {
+    .media {
+      position: relative;
+
+      picture {
+        height: var(--casestudy-media-size);
+        inset-block-start: var(--casestudy-media-inset);
+        inset-inline-start: var(--casestudy-media-inset);
+        position: absolute;
+        width: var(--casestudy-media-size);
+      }
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+}

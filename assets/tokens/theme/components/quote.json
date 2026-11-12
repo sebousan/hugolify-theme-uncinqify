@@ -1,0 +1,8 @@
+{
+  "quote": {
+    "fontSize": {
+      "$value": "{fontSize.fluid.xl}",
+      "$type": "dimension"
+    }
+  }
+}

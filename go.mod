@@ -1,3 +1,3 @@
-module github.com/sebousan/hugolify-theme-uncinqify
+module github.com/sebousan/hugolify-theme-uncinqify/v2
 
 go 1.21

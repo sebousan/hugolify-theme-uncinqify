@@ -1,0 +1,10 @@
+{
+  "heading": {
+    "surtitle": {
+      "marginBlockEnd": {
+        "$value": "{spacing.sm}",
+        "$type": "dimension"
+      }
+    }
+  }
+}

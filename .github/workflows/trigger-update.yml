@@ -55,6 +55,14 @@ jobs:
       # Update dependent sites
       - name: Update dependent sites
         run: |
+          tag="${{ steps.vars.outputs.tag }}"
+
+          # Read the module path from go.mod rather than spelling it out: from
+          # v2 on it carries its major, and a site imports one path or the
+          # other, never both.
+          module=$(awk '/^module /{print $2}' go.mod)
+          echo "Tag $tag -> module $module"
+
           # Liste des dépôts à mettre à jour
           repos=(
             "sebousan/architectify-www"
@@ -71,14 +79,20 @@ jobs:
             echo "Updating $repo..."
             git clone https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/$repo.git
             cd $(basename $repo)
-            
-            # Mettre à jour le module Hugo
-            hugo mod get github.com/sebousan/hugolify-theme-uncinqify@${{ steps.vars.outputs.tag }}
-            hugo mod tidy
 
-            git add go.mod go.sum
-            git commit -m "chore: update hugolify-theme-uncinqify to ${{ steps.vars.outputs.tag }}" || echo "No changes to commit"
-            git push origin main
+            # A site that does not import this major is left alone: during the
+            # transition, a v2 release must push nothing to the v1 sites.
+            if grep -q "path: $module\$" config/_default/module.yaml; then
+              # Mettre à jour le module Hugo
+              hugo mod get $module@$tag
+              hugo mod tidy
+
+              git add go.mod go.sum
+              git commit -m "chore: update hugolify-theme-uncinqify to $tag" || echo "No changes to commit"
+              git push origin main
+            else
+              echo "Skipping $repo: does not import $module"
+            fi
             cd ..
           done
     env:

@@ -1,0 +1,27 @@
+{
+  "logo": {
+    "color": {
+      "$value": "{color.brand.default}",
+      "$type": "color"
+    },
+    "fontSize": {
+      "$value": "{size.22}",
+      "$type": "dimension",
+      "$description": "1.375rem."
+    },
+    "fontWeight": {
+      "$value": "{fontWeight.bold}",
+      "$type": "fontWeight"
+    },
+    "letterSpacing": {
+      "$value": "{letterSpacing.lg}",
+      "$type": "dimension",
+      "$description": "0.1em."
+    },
+    "textTransform": {
+      "$value": "uppercase",
+      "$type": "string",
+      "$description": "Read by theme/components/logo.css: the design system's .logo sets no text-transform of its own."
+    }
+  }
+}

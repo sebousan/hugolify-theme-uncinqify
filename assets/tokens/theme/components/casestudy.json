@@ -1,0 +1,15 @@
+{
+  "casestudy": {
+    "media": {
+      "inset": {
+        "$value": "15%",
+        "$type": "dimension",
+        "$description": "A case study thumbnail is a logo, not a photograph: it is inset inside its media box rather than filling it."
+      },
+      "size": {
+        "$value": "70%",
+        "$type": "dimension"
+      }
+    }
+  }
+}

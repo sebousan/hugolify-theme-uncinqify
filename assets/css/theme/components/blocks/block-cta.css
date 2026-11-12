@@ -1,0 +1,9 @@
+/* theme/components/blocks/block-cta.css */
+@layer components {
+  /* A call to action that follows a figure or a video belongs to it: no
+     vertical break between the two. */
+  .block-figure + .block-cta,
+  .block-video + .block-cta {
+    padding-block-start: 0;
+  }
+}

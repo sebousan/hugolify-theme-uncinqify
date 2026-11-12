@@ -1,0 +1,17 @@
+/* theme/components/blocks/block-editorial.css */
+@layer components {
+  /* Editorial blocks run against each other on every page but the case studies,
+     where each one keeps the section rhythm. */
+  body:not(.page-casestudies) .block-editorial {
+    @media (--md) {
+      padding-block: 0;
+    }
+
+    /* Stacked, the blocks need the gap back */
+    @media not (--sm) {
+      &:not(:last-child) {
+        margin-block-end: var(--spacing-xl);
+      }
+    }
+  }
+}

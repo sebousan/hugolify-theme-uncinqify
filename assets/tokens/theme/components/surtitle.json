@@ -1,0 +1,39 @@
+{
+  "surtitle": {
+    "border": {
+      "radius": {
+        "$value": "{radius.control}",
+        "$type": "dimension"
+      }
+    },
+    "color": {
+      "background": {
+        "opacity": {
+          "$value": "{opacity.shadow}",
+          "$type": "number",
+          "$description": "How far the badge steps off its ground. The colour itself is not a token: theme/components/surtitle.css derives it from --color-text, which only resolves correctly when declared on the component. rgba($primary, .1) in the SASS theme."
+        }
+      },
+      "text": {
+        "$value": "{color.brand.default}",
+        "$type": "color"
+      }
+    },
+    "fontSize": {
+      "$value": "{fontSize.2xs}",
+      "$type": "dimension"
+    },
+    "padding": {
+      "block": {
+        "$value": "0.35em",
+        "$type": "dimension",
+        "$description": "$badge-padding-y."
+      },
+      "inline": {
+        "$value": "0.65em",
+        "$type": "dimension",
+        "$description": "$badge-padding-x."
+      }
+    }
+  }
+}

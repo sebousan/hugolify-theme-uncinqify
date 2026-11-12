@@ -1,0 +1,14 @@
+/* theme/layouts/header.css */
+/*
+ * The two buttons of the header bar, the search toggle and the highlighted
+ * menu link, share one height: both take a slimmer block padding than the
+ * buttons of the page.
+ */
+@layer layouts {
+  header[role='banner'] {
+    .btn-search,
+    .main-menu .nav-item-highlighted .btn {
+      --btn-padding-block: var(--spacing-xs);
+    }
+  }
+}

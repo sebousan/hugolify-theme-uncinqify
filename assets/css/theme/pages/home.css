@@ -1,0 +1,7 @@
+/* theme/pages/home.css */
+@layer pages {
+  /* The home hero gives its text one grid column more than the inner pages */
+  .home-page {
+    --hero-content-width: var(--hero-content-width-home);
+  }
+}

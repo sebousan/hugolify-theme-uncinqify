@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "fontSize": {
+      "$value": "{fontSize.sm}",
+      "$type": "dimension",
+      "$description": "--bs-nav-link-font-size 1rem, a fixed size rather than the fluid body size."
+    },
+    "fontWeight": {
+      "$value": "{fontWeight.control}",
+      "$type": "fontWeight",
+      "$description": "$nav-link-font-weight 500. .nav already reads --nav-font-weight; the token was simply never set."
+    }
+  }
+}

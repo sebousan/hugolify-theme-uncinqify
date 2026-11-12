@@ -1,0 +1,9 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* theme/components/doc.css */
+@layer tokens {
+  :root {
+    --doc-padding-block: var(--spacing-sm);
+    --doc-padding-inline: var(--spacing-sm);
+  }
+}
