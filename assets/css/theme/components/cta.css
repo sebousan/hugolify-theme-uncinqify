@@ -1,15 +1,22 @@
 /* theme/components/cta.css */
 /*
  * A CTA set to render as a plain link (`link: true`) drops the .btn class but
- * still goes somewhere: it keeps the buttons' arrow (see btn.css), with the
- * same icon, size and slide on hover, so a link CTA reads as one family with
- * the buttons around it.
+ * still goes somewhere: it is a button without its box. It keeps the button's
+ * label type (size, weight, letter-spacing, case) and its arrow (see btn.css),
+ * with the same icon, size and slide on hover, so a link CTA reads as one
+ * family with the buttons around it. The font family needs nothing: the
+ * button inherits it too.
  */
 @layer components {
   .cta a:not(.btn) {
     align-items: center;
     display: inline-flex;
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
     gap: var(--btn-gap);
+    letter-spacing: var(--btn-letter-spacing);
+    line-height: var(--btn-line-height);
+    text-transform: var(--btn-text-transform);
     /* .cta is a flex column on mobile, which would stretch the link and its
        hit area across the whole line */
     inline-size: fit-content;
