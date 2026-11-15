@@ -11,6 +11,18 @@
   .main-menu {
     /* ── Expanded: the header bar ─────────────────────────────────── */
 
+    .dropdown-menu {
+      li a {
+        font-weight: var(--font-weight-control);
+        padding: 0;
+     }
+      li p {
+        color: var(--color-text-muted);
+        font-size: var(--font-size-xs);
+        margin-block: 0;
+      }
+    }
+
     @media (--header-expand) {
       /* Trigger and panel share one surface while the panel is open. The
          surface is the panel's own token, not a literal colour: on a site that
@@ -31,8 +43,6 @@
         /* The item carries its own padding, so the link inside it is bare and
            stretches over the whole item, description included. */
         li a {
-          font-weight: var(--font-weight-control);
-          padding: 0;
           white-space: normal;
 
           &::before {
@@ -40,12 +50,6 @@
             inset: 0;
             position: absolute;
           }
-        }
-
-        li p {
-          color: var(--color-text-muted);
-          font-size: var(--font-size-xs);
-          margin-block: 0;
         }
 
         @media (hover: hover) and (pointer: fine) {
@@ -58,16 +62,6 @@
             background-color: transparent;
           }
         }
-      }
-    }
-
-    /* ── Panel: the mobile drawer ────────────────────────────────── */
-
-    /* The design system already flattens the dropdown into an inline sub-list
-       here; the sub-items keep the tinted surface they had in the SASS theme. */
-    @media not (--header-expand) {
-      .dropdown-menu li {
-        background-color: var(--color-background-muted);
       }
     }
   }
