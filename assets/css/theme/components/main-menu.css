@@ -9,19 +9,24 @@
  */
 @layer components {
   .main-menu {
-    /* ── Expanded: the header bar ─────────────────────────────────── */
+    /* ── Both: the header bar and the mobile panel ────────────────── */
 
+    /* Title and description sit tight. Their inline padding is left to the
+       design system in the panel, where it lines both up with the other
+       links; the header bar resets it below. */
     .dropdown-menu {
       li a {
         font-weight: var(--font-weight-control);
-        padding: 0;
-     }
+        padding-block: 0;
+      }
       li p {
         color: var(--color-text-muted);
         font-size: var(--font-size-xs);
         margin-block: 0;
       }
     }
+
+    /* ── Expanded: the header bar ─────────────────────────────────── */
 
     @media (--header-expand) {
       /* Trigger and panel share one surface while the panel is open. The
@@ -42,6 +47,10 @@
 
         /* The item carries its own padding, so the link inside it is bare and
            stretches over the whole item, description included. */
+        li :is(a, p) {
+          padding-inline: 0;
+        }
+
         li a {
           white-space: normal;
 
