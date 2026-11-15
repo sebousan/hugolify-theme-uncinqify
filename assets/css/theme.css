@@ -22,6 +22,7 @@
 /* Components */
 @import './theme/components/btn.css';
 @import './theme/components/casestudy.css';
+@import './theme/components/cta.css';
 @import './theme/components/doc.css';
 @import './theme/components/hero.css';
 @import './theme/components/logo.css';

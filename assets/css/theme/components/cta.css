@@ -1,0 +1,36 @@
+/* theme/components/cta.css */
+/*
+ * A CTA set to render as a plain link (`link: true`) drops the .btn class but
+ * still goes somewhere: it keeps the buttons' arrow (see btn.css), with the
+ * same icon, size and slide on hover, so a link CTA reads as one family with
+ * the buttons around it.
+ */
+@layer components {
+  .cta a:not(.btn) {
+    align-items: center;
+    display: inline-flex;
+    gap: var(--btn-gap);
+    /* .cta is a flex column on mobile, which would stretch the link and its
+       hit area across the whole line */
+    inline-size: fit-content;
+
+    &::before {
+      background-color: currentColor;
+      content: '';
+      flex-shrink: 0;
+      height: var(--btn-icon-size);
+      mask: var(--btn-icon) center / var(--btn-icon-size) no-repeat;
+      width: var(--btn-icon-size);
+
+      @media (prefers-reduced-motion: no-preference) {
+        transition: translate var(--duration-normal) var(--easing);
+      }
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover::before {
+        translate: var(--btn-icon-translate-hover);
+      }
+    }
+  }
+}

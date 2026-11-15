@@ -11,6 +11,7 @@
  */
 @layer components {
   .btn {
+    align-items: center;
     letter-spacing: var(--btn-letter-spacing);
   }
 
