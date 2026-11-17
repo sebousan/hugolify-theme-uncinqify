@@ -1,0 +1,12 @@
+/* theme/components/item.css */
+@layer components {
+  /* In a card the badge keeps half the gap of the card above the title, where
+     the design system glues it to the title (components/item.css takes the
+     whole gap back, on .item). Set on .item so that it wins there, and here
+     rather than in the token file for the reason above: on :root,
+     var(--item-gap) would be the gap of :root, not the one of the card, which
+     a module may change (.service). */
+  .item {
+    --surtitle-margin-block-end: calc(var(--item-gap) / 2 * -1);
+  }
+}

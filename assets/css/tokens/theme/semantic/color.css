@@ -7,8 +7,8 @@
     --color-brand-hover: oklch(32.11% 0 0);
     --color-brand-muted: oklch(from var(--color-black) l c h / 0.1);
     --color-brand-strong: var(--color-black);
+    --color-highlight: var(--color-cream);
     --color-text: var(--color-black);
     --color-cream: oklch(98.15% 0.027 93.1);
-    --color-highlight: var(--color-cream);
   }
 }

@@ -7,7 +7,6 @@
     --surtitle-color-background-opacity: var(--opacity-shadow);
     --surtitle-font-size: var(--font-size-2xs);
     --surtitle-border-radius: var(--radius-control);
-    --surtitle-margin-block-end: calc(var(--item-gap) / 2 * -1);
     --surtitle-padding-block: 0.35em;
     --surtitle-padding-inline: 0.65em;
   }

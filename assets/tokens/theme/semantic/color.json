@@ -26,6 +26,13 @@
       "$type": "color",
       "$description": "$secondary_light #fff9e5: the hover surface of the page cards."
     },
+    "highlight": {
+      "default": {
+        "$value": "{color.cream}",
+        "$type": "color",
+        "$description": "The ground of the highlight blocks and heroes (ui.theme: highlight): the cream of the page cards, where the design system has a pale yellow."
+      }
+    },
     "text": {
       "default": {
         "$value": "{color.black}",

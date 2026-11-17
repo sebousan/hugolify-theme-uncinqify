@@ -2,8 +2,9 @@
   "heading": {
     "surtitle": {
       "marginBlockEnd": {
-        "$value": "{spacing.sm}",
-        "$type": "dimension"
+        "$value": "0",
+        "$type": "dimension",
+        "$description": "0 keeps the gap of the heading between the badge and the title, where the design system takes it back to glue them. margin-bottom $spacer in the SASS theme."
       }
     }
   }
