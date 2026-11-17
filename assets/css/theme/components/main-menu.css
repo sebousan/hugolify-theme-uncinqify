@@ -22,13 +22,24 @@
       li p {
         color: var(--color-text-muted);
         font-size: var(--font-size-xs);
+        font-weight: normal;
         margin-block: 0;
+      }
+    }
+    @media not (--header-expand) {
+      --nav-gap: var(--spacing-sm);
+      .nav-item-highlighted {
+        --nav-padding-block: var(--spacing-xs) 0;
       }
     }
 
     /* ── Expanded: the header bar ─────────────────────────────────── */
 
     @media (--header-expand) {
+      .nav-primary {
+        align-items: center;
+      }
+
       /* Trigger and panel share one surface while the panel is open. The
          surface is the panel's own token, not a literal colour: on a site that
          sets a dark scheme this has to follow it, or the trigger would keep a
