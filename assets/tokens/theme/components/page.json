@@ -18,13 +18,6 @@
           "$value": "{color.cream}",
           "$type": "color",
           "$description": "$secondary_light: the card turns cream under the pointer."
-        },
-        "onBg": {
-          "default": {
-            "$value": "{color.background.muted.hover}",
-            "$type": "color",
-            "$description": "darken($light, 2) inside a .block-bg section."
-          }
         }
       }
     },

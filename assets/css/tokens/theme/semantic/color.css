@@ -9,5 +9,6 @@
     --color-brand-strong: var(--color-black);
     --color-text: var(--color-black);
     --color-cream: oklch(98.15% 0.027 93.1);
+    --color-highlight: var(--color-cream);
   }
 }

@@ -23,7 +23,7 @@
 
   /* Inside a tinted section the card steps one shade darker, and the thumbnail
      lets that surface through. */
-  .block-bg .page {
+  .block-light .page {
     --item-color-background: var(--page-color-background-on-bg);
     --item-media-color-background: transparent;
   }
